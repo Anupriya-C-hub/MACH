@@ -10,6 +10,7 @@ import SME from './Components/sme';
 import ReplacementFinder from './Components/replacement';
 import ComparisionAnalysis from './Components/comparisionanalysis';
 import Employeeskill from './Components/employeeskill';
+import Main from './Components/main';
 
 //base url: http://127.0.0.1:8000/mach/employees1/?
 

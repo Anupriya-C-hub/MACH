@@ -7,33 +7,34 @@ import replacementImage from "../assets/replacementFinder.png";
 import comparisionImage from "../assets/comparisionAnalysis.png";
 import skillImage from "../assets/employeeSkill.png";
 import logo from "../assets/logo.png";
-import backgroundImage from "../assets/wallpaper1.1.jpg"; 
-
+import backgroundImage from "../assets/wallapper.jfif"; // Import your background image
+ 
 function Main() {
-
+ 
   const containerStyle = {
     position: 'relative',
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'contain',
     backgroundPosition: 'center',
-    height: '500px', 
+    height: '500px', // Adjust height as needed
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    
   };
-
+ 
   const overlayStyle = {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', 
+    backgroundColor: 'rgba(255, 255, 255, 0.4)', // White overlay with 50% opacity
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
   };
-
+ 
   return (
     <>
     <header>
@@ -63,19 +64,19 @@ function Main() {
     </header>
       <div style={containerStyle}>
         <div style={overlayStyle}>
-        <Link to="/Components/replacement" style={{ textDecoration: 'none' }}><img id="replacement" class="icons" src={replacementImage} alt="Icon" title="Replacement Finder"/>
+        <Link to="/Components/replacement" style={{ textDecoration: 'none' }}>
         </Link><br/>
-            <Link to="/Components/comparisionanalysis" style={{ textDecoration: 'none' }}><img id="comparision" class="icons" src={comparisionImage} alt="Icon" title="Comparision Analysis"/></Link><br/>
-            <Link to="/Components/employeeskill" style={{ textDecoration: 'none' }}><img id="skills" class="icons" src={skillImage} alt="Icon" title="Employee Skill"/></Link>
+            <Link to="/Components/comparisionanalysis" style={{ textDecoration: 'none' }}></Link><br/>
+            <Link to="/Components/employeeskill" style={{ textDecoration: 'none' }}></Link>
           <h1 class="heading">MACH</h1>
-             <Link to="/Components/executiesummary" style={{ textDecoration: 'none' }}><img id="executive" class="icons" src={executiveImage} alt="Icon" title="Executive Summary"/></Link>
-             <Link to="/Components/talentfinder" style={{ textDecoration: 'none' }}><img id="talent" class="icons" src={talentImage} alt="Icon" title="Talent Finder"/></Link>
-             <Link to="/Components/sme" style={{ textDecoration: 'none' }}><img id="sme" class="icons" src={smeImage} alt="Icon" title="SME"/></Link>
+             <Link to="/Components/executiesummary" style={{ textDecoration: 'none' }}></Link>
+             <Link to="/Components/talentfinder" style={{ textDecoration: 'none' }}></Link>
+             <Link to="/Components/sme" style={{ textDecoration: 'none' }}></Link>
         </div>
       </div>
-      
+     
     </>
   );
 }
-
+ 
 export default Main;
